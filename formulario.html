@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT FORCE VOLUMEN</title>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- CSS PERSONAL -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <a href="index.html"><img src="assets/imagenes/LOGO.png" alt="logo fit force turqueza" class="logo"></a>
+        <!-- icono hamburguesa -->
+        <img src="assets/iconos/hambur.svg" alt="icono de tres rayas horizontales" width="35px" class="abrir-menu"
+            id="abrir">
+        <nav class="nav" id="nav">
+            <!-- icono cerrar -->
+            <img src="assets/iconos/x.svg" alt="una equis" width="15px" class="cerrar-menu" id="cerrar">
+            <!-- toda la info -->
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">INICIO</a></li>
+                <li><a href="#nosotros">CONOZCANOS</a></li>
+                <li><a href="#tarifas">TARIFAS</a></li>
+                <li><a href="#plan-ejercicios">ACTIVIDADES</a></li>
+                <li><a href="formulario.html">CONTACTO</a></li>
+                <li><a href="#" class="rayita"></a></li>
+                <li><a href="#" class="btn-login">INICIAR SESIÓN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contacto" id="contacto">
+            <div class="contacto-contenedor">
+                <h2 class="contacto-titulo">¿Listo para transformar tu cuerpo?</h2>
+                <p class="parrafos">Hacelo ahora. Escribinos y empezá tu camino al cambio.</p>
+                <a href="#formulario-contacto" class="boton-formulario">¡QUIERO EMPEZAR!</a>
+
+                <!-- Opcional: formulario directo -->
+                <form id="formulario-contacto" class="formulario">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu correo" required>
+                    <textarea placeholder="Contanos en qué quieres mejorar" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+<footer class="footer">
+            <div class="container-footer">
+                <div class="footer-section about">
+                    <h3>FITFORCE</h3>
+                    <p class="parrafos-footer">Tu lugar para transformar cuerpo y mente. Únete a nuestra comunidad y alcanza tus metas con
+                        nosotros.</p>
+                    <p><strong>Email:</strong> contacto@FITFORCE.com</p>
+                    <p><strong>Tel:</strong> +506 23456789</p>
+                    <a href=""><img src="./assets/iconos/face.svg" alt="icono de facebook" class="social"></a>
+                    <a href=""><img src="./assets/iconos/insta.svg" alt="icono de instagram" class="social"></a>
+                </div>
+                <div class="footer-section links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#index.html">Inicio</a></li>
+                        <li><a href="#nosotros">Conozcanos</a></li>
+                        <li><a href="#tarifas">Tarifas</a></li>
+                        <li><a href="#plan-ejercicios">Actividades</a></li>
+                        <li><a href="#formulario.html">Contacto</a></li>
+                    </ul>
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31464.825267095777!2d-84.0420637218124!3d9.672226575663611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa111001de7bfff%3A0xad5be88636e0046b!2sFit%20Center!5e0!3m2!1ses!2scr!4v1752860078716!5m2!1ses!2scr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe promociones y novedades en tu correo</p>
+                    <form>
+                        <input type="email" placeholder="Tu email" aria-label="Email" required />
+                        <button type="submit">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 FITFORCE. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="JS/menu.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
