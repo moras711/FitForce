@@ -1002,6 +1002,14 @@ h2 {
     .newsletter form {
         display: inline-block;
     }
+        /* nosotros */
+    .nosotros {
+        padding: 1rem;
+    }
+
+    .info-nosotros {
+        padding: 10px 15px;
+    }
 }
 
 /* testimonios */
@@ -1177,141 +1185,16 @@ h2 {
     }
 }
 
-/* Extra responsive para celulares pequeños */
-@media (max-width: 480px) {
-    .footer-section h3 {
-        font-size: 1.1rem;
-    }
 
-    .newsletter input[type="email"] {
-        font-size: 0.85rem;
-    }
-
-    .newsletter button {
-        font-size: 0.9rem;
-    }
-}
-
-/* .footer {
-    background-color: #111;
-    color: #eee;
-    padding: 3rem 1rem 1rem;
-    font-family: 'Century Gothic', sans-serif;
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.parrafos-footer {
-    font-family: 'Century Gothic', sans-serif;
-    font-size: 0.8rem;
-    color: white;
-}
-
-.container-footer {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-between;
-}
-
-.footer-section {
-    flex: 1 1 220px;
-    min-width: 220px;
-}
-
-.footer-section h3 {
-    color: #298594;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-}
-
-.footer-section p {
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 0.7rem;
-}
-
-.footer-section ul li a {
-    color: #eee;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section ul li a:hover {
-    color: #298594;
-    text-decoration: underline;
-}
-
-.social {
-    height: 35px;
-}
-
-.social:hover {
-    transform: translateY(-10px);
-}
-
-.newsletter form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
-
-.newsletter input[type="email"] {
-    padding: 0.6rem 1rem;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    transition: box-shadow 0.3s ease;
-}
-
-.newsletter input[type="email"]:focus {
-    box-shadow: 0 0 8px #298594;
-}
-
-.newsletter button {
-    background-color: #298594;
-    color: #111;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    font-weight: 700;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.newsletter button:hover {
-    background-color: #298594;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 2rem;
-    border-top: 1px solid #333;
-    padding-top: 1rem;
-    font-size: 0.9rem;
-    color: #666;
-}
 
 /* Responsive */
 
 @media (max-width: 768px) {
-    .footer{
+    .footer {
         display: flex;
         padding: 1rem;
     }
+
     .container-footer {
         flex-direction: column;
         gap: 2rem;
@@ -1321,6 +1204,7 @@ h2 {
         min-width: 100%;
         flex-direction: column;
     }
+
     .parrafos-footer {
         font-size: 0.8rem;
         min-width: 200px;
@@ -1331,69 +1215,9 @@ h2 {
         font-size: 0.5rem;
     }
 
-} */
+}
 
 /* FINAL DEL FOOTER */
-/* === RESPONSIVE: modo tarjetas === */
-@media (max-width: 768px) {
-    .tabla-ejercicio {
-        border: 0;
-        min-width: 100%;
-        /* full width */
-    }
-
-    .tabla-ejercicio thead {
-        display: none;
-        /* ocultamos encabezado */
-    }
-
-    .tabla-ejercicio tr {
-        display: block;
-        margin-bottom: 1.5rem;
-        border: 1px solid #333;
-        border-radius: 10px;
-        background-color: #1a1a1a;
-        padding: 1rem;
-    }
-
-    .tabla-ejercicio td {
-        display: block;
-        text-align: left;
-        padding: 0.5rem 0;
-        font-size: 0.9rem;
-        border: none;
-        position: relative;
-    }
-
-    .tabla-ejercicio td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        color: #1dc5d8;
-        display: block;
-        margin-bottom: 0.3rem;
-        text-transform: uppercase;
-        font-size: 0.75rem;
-        letter-spacing: 0.05rem;
-    }
-
-    .linea-defi {
-        margin-top: 3rem;
-    }
-
-    /* testimonios */
-    .testimonials h2 {
-        font-size: 1.5rem;
-    }
-
-    .tes p {
-        font-size: 1rem;
-    }
-
-    .avatar {
-        width: 80px;
-        height: 80px;
-    }
-}
 
 
 @media screen and (max-width: 1500px) {
@@ -1468,13 +1292,15 @@ h2 {
         display: flex;
         flex-wrap: wrap;
     }
-
     .container-wrapper {
         font-size: 1.8rem;
     }
-
     /* Final section numeros */
     /* section motivacion */
+    .motivacion {
+    padding: 1rem;
+    }
+
     .moti1 {
         font-size: 1.2rem;
         letter-spacing: 0.2rem;
@@ -1534,18 +1360,7 @@ h2 {
         text-align: left;
         vertical-align: top;
     }
-
     /* final seccion definición index */
-    /* carrusel 2 defi */
-    .container-footer {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .footer-section {
-        min-width: 100%;
-        flex-direction: column;
-    }
 }
 
 /* Tablet */
@@ -1553,16 +1368,12 @@ h2 {
     .contenido-carrusel {
         background-image: url(../assets/imagenes/defi-tablet.jpg);
     }
-
     .contenido-carrusel2 {
         background-image: url(../assets/imagenes/tablet-volumen.jpg);
     }
-
     .contenido-carrusel3 {
         background-image: url(../assets/imagenes/tablet-resistencia.jpg);
     }
-
-
     .parra-carru {
         font-size: 1rem;
         padding: 2rem;
@@ -1589,14 +1400,12 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-    header{
-        width: 98%;
-    }
     .abrir-menu,
     .cerrar-menu {
         display: block;
         margin: 1.5rem;
     }
+
     .slide {
         text-align: center;
     }
@@ -1619,7 +1428,61 @@ h2 {
         background-size: cover;
 
     }
+    .tabla-ejercicio {
+        border: 0;
+        min-width: 100%;
+    }
 
+    .tabla-ejercicio thead {
+        display: none;
+    }
+
+    .tabla-ejercicio tr {
+        display: block;
+        margin-bottom: 1.5rem;
+        border: 1px solid #333;
+        border-radius: 10px;
+        background-color: #1a1a1a;
+        padding: 1rem;
+    }
+
+    .tabla-ejercicio td {
+        display: block;
+        text-align: left;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+        border: none;
+        position: relative;
+    }
+
+    .tabla-ejercicio td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #1dc5d8;
+        display: block;
+        margin-bottom: 0.3rem;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .linea-defi {
+        margin-top: 3rem;
+    }
+
+    /* testimonios */
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    .tes p {
+        font-size: 1rem;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
     /* .contenedor-boton, este boton va ahí adentro */
     .contenedor-boton3 {
         flex-direction: column;
@@ -1663,33 +1526,37 @@ h2 {
         padding: 3rem;
     }
 
-    .moti1 {
+    /* nosotros */
+    .nosotros {
+        padding: 1.5rem;
+    }
 
+    .info-nosotros {
+        padding: 15px 20px;
+    }
+    .moti1 {
         font-size: 1rem;
         color: white;
         letter-spacing: 0.2rem;
-
     }
-
+    .motivacion2{
+        padding: 1rem;
+    }
     .contenido-carrusel {
         background-image: url(../assets/imagenes/celular-defi.jpg);
     }
-
     .contenido-carrusel2 {
         background-image: url(../assets/imagenes/cel-volumen2.jpg);
     }
-
     .contenido-carrusel3 {
         background-image: url(../assets/imagenes/celular-resis2.jpg);
     }
-
     .parra-carru {
         font-size: 1rem;
         padding: 2rem;
         margin-top: 200px;
         text-align: center;
     }
-
     .parra-carru2 {
         text-align: center;
         padding: 1.5rem;
@@ -1697,22 +1564,50 @@ h2 {
         margin-bottom: 350px;
         font-size: 1rem;
     }
-
     .parra-carru3 {
         margin-bottom: 380px;
         padding: 1rem;
         font-size: 1rem;
     }
-
     .boton-carrusel {
         font-size: 1rem;
         padding: 8px 20px;
     }
-
-
     /* botones del carrusel del banner */
-    .carrusel-btn{
-    font-size: 0.8rem;
+    .carrusel-btn {
+        font-size: 0.8rem;
     }
 
+}
+/* Extra responsive para celulares pequeños */
+@media (max-width: 480px) {
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .newsletter input[type="email"] {
+        font-size: 0.85rem;
+    }
+
+    .newsletter button {
+        font-size: 0.9rem;
+    }
+    .parra-carru {
+        font-size: 1rem;
+        padding: 2rem;
+        margin-top: 350px;
+        text-align: center;
+    }
+    .parra-carru2 {
+        text-align: center;
+        padding: 1.5rem;
+        left: 2%;
+        margin-bottom: 150px;
+        font-size: 1rem;
+    }
+    .parra-carru3 {
+        margin-bottom: 190px;
+        padding: 1rem;
+        font-size: 1rem;
+    }
 }
