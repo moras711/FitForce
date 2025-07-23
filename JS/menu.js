@@ -1,6 +1,8 @@
 const abrir = document.querySelector("#abrir");
 const nav = document.querySelector("#nav");
+const header = document.querySelector("#header");
 const cerrar = document.querySelector("#cerrar");
+const body = document.querySelector('#body');
 
 abrir.addEventListener("click", () =>{
     nav.classList.add("visible");
@@ -30,3 +32,14 @@ menuLinks.forEach(menuLink => {
         nav.classList.remove("visible");
     })
 })
+
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    if(scrolled > 150){
+        header.classList.add('toggleBg');
+    }else{
+        header.classList.remove('toggleBg')
+    }
+});
+
+

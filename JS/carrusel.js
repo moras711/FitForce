@@ -9,21 +9,42 @@ function updateSlidePosition() {
     track.style.transform = `translateX(-${currentSlide * 100}vw)`;
 }
 
-nextButton.addEventListener('click', () => {
+// Función siguiente
+function nextSlide() {
     if (currentSlide < slides.length - 1) {
         currentSlide++;
     } else {
         currentSlide = 0;
     }
     updateSlidePosition();
-});
+}
 
-prevButton.addEventListener('click', () => {
+// Función anterior
+function prevSlide() {
     if (currentSlide > 0) {
         currentSlide--;
     } else {
         currentSlide = slides.length - 1;
     }
     updateSlidePosition();
+}
+
+// Event Listeners
+nextButton.addEventListener('click', () => {
+    nextSlide();
+    resetInterval();
 });
- //Transición automática cada 5 segundos
+
+prevButton.addEventListener('click', () => {
+    prevSlide();
+    resetInterval();
+});
+
+// Transición automática cada 5 segundos
+let autoSlide = setInterval(nextSlide, 5000);
+
+// Reiniciar cuando el usuario interactúa
+function resetInterval() {
+    clearInterval(autoSlide);
+    autoSlide = setInterval(nextSlide, 5000);
+}
